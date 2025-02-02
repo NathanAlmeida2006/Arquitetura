@@ -38,4 +38,25 @@ public class RHServiceImpl implements RHService {
     public void excluirRH(int id) {
         rhRepository.delete(id);
     }
+
+    @Override
+    public void calcularFolhaPagamento() {
+        System.out.println("Calculando folha de pagamento");
+
+    }
+
+    @Override
+    public void gerenciarFerias() {
+        System.out.println("Gerenciando ferias");
+    }
+
+    @Override
+    public void avaliarDesempenho() {
+        System.out.println("Avaliando desempenho");
+    }
+
+    @Override
+    public void processarAdmissao() {
+        System.out.println("Processando admissao");
+    }
 }

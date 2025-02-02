@@ -38,4 +38,26 @@ public class ProducaoServiceImpl implements ProducaoService {
     public void excluirProducao(int id) {
         producaoRepository.delete(id);
     }
+
+    @Override
+    public void controlarQualidade() {
+        System.out.println("Cadastrando qualidade");
+    }
+
+    @Override
+    public void planejararProducao() {
+        System.out.println("Planejando producao");
+
+    }
+
+    @Override
+    public void monitorarProcesso() {
+        System.out.println("Monitorando processo");
+
+    }
+
+    @Override
+    public void gerarRelatorioProducao() {
+        System.out.println("Gerando relatorio producao");
+    }
 }

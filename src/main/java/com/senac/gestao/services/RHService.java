@@ -15,4 +15,12 @@ public interface RHService {
     List<RH> listarRH();
 
     void excluirRH(int id);
+
+    void calcularFolhaPagamento();
+
+    void gerenciarFerias();
+
+    void avaliarDesempenho();
+
+    void processarAdmissao();
 }

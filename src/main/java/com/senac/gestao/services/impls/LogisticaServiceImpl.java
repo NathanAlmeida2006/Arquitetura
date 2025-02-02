@@ -38,4 +38,26 @@ public class LogisticaServiceImpl implements LogisticaService {
     public void excluirLogistica(int id) {
         logisticaRepository.delete(id);
     }
+
+    @Override
+    public void gerenciarEstoque() {
+        System.out.println("Gerenciando Logistica");
+    }
+
+    @Override
+    public void calcularFrete() {
+        System.out.println("Calculando Frete");
+
+    }
+
+    @Override
+    public void rastrearPedido() {
+        System.out.println("Rastreando Pedido");
+    }
+
+    @Override
+    public void emitirNotaFiscal() {
+        System.out.println("Emitir Nota Fiscal");
+
+    }
 }

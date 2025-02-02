@@ -15,4 +15,12 @@ public interface LogisticaService {
     List<Logistica> listarLogistica();
 
     void excluirLogistica(int id);
+
+    void gerenciarEstoque();
+
+    void calcularFrete();
+
+    void rastrearPedido();
+
+    void emitirNotaFiscal();
 }

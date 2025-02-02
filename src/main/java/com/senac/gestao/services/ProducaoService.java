@@ -15,4 +15,11 @@ public interface ProducaoService {
     List<Producao> listarProducao();
 
     void excluirProducao(int id);
+
+    void controlarQualidade();
+    void planejararProducao();
+    void monitorarProcesso();
+    void gerarRelatorioProducao();
+
+
 }

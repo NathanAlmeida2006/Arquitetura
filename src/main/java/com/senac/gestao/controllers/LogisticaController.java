@@ -3,6 +3,8 @@ package com.senac.gestao.controllers;
 import com.senac.gestao.models.Logistica;
 import com.senac.gestao.services.LogisticaService;
 
+import java.util.List;
+
 public class LogisticaController {
     private final LogisticaService logisticaService;
 
@@ -10,8 +12,8 @@ public class LogisticaController {
         this.logisticaService = logisticaService;
     }
 
-    public Logistica cadastrarLogistica(Logistica logistica) {
-        return logisticaService.cadastrarLogistica(logistica);
+    public void cadastrarLogistica(Logistica logistica) {
+        logisticaService.cadastrarLogistica(logistica);
     }
 
     public Logistica atualizarLogistica(Logistica logistica) {
@@ -22,7 +24,27 @@ public class LogisticaController {
         return logisticaService.consultarLogistica(id).orElse(null);
     }
 
+    public List<Logistica> listarLogistica() {
+        return logisticaService.listarLogistica();
+    }
+
     public void excluirLogistica(int id) {
         logisticaService.excluirLogistica(id);
+    }
+
+    public void gerenciarEstoque() {
+        logisticaService.gerenciarEstoque();
+    }
+
+    public void calcularFrete() {
+        logisticaService.calcularFrete();
+    }
+
+    public void rastrearPedido() {
+        logisticaService.rastrearPedido();
+    }
+
+    public void emitirNotaFiscal() {
+        logisticaService.emitirNotaFiscal();
     }
 }

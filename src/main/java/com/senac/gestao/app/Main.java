@@ -124,5 +124,12 @@ public class Main {
         // 8. Excluir uma entidade (exemplo: excluir a Produção)
         producaoController.excluirProducao(producao.getId());
         System.out.println("\nProdução excluída. Consultando novamente: " + producaoController.consultarProducao(producao.getId()));
+
+        // 9. Usar metodo especifico
+        System.out.println("\nMétodos específicos: ");
+        rhController.avaliarDesempenho();
+        logisticaController.calcularFrete();
+        logisticaController.emitirNotaFiscal();
+
     }
 }
